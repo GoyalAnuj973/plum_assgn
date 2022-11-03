@@ -1,13 +1,16 @@
-.form-preview-container{
-    width: 352px;
-    height: 275px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+.form-preview-container {
+  width: 352px;
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.MuiDivider-root.divider-preview {
+  width: 352px;
 }

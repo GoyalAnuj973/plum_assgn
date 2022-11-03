@@ -6,6 +6,13 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import Divider from "@mui/material/Divider";
+
+const style = {
+  width: "100%",
+  maxWidth: 3600,
+  bgcolor: "background.paper",
+};
 
 function FormPreview() {
   return (
@@ -20,21 +27,22 @@ function FormPreview() {
           >
             Form Preview
           </Typography>
+          <Divider className="divider-preview" sx={style} />
           <List className="form-preview-list">
             <ListItem className="form-preview-list-item">
-              <ListItemText>Personal email address      -</ListItemText>
+              <ListItemText>Personal email address -</ListItemText>
             </ListItem>
             <ListItem className="form-preview-list-item">
-              <ListItemText>Mobile number      -</ListItemText>
+              <ListItemText>Mobile number -</ListItemText>
             </ListItem>
             <ListItem className="form-preview-list-item">
-              <ListItemText>Address line 01      -</ListItemText>
+              <ListItemText>Address line 01 -</ListItemText>
             </ListItem>
             <ListItem className="form-preview-list-item">
-              <ListItemText>Address line 02      -</ListItemText>
+              <ListItemText>Address line 02 -</ListItemText>
             </ListItem>
             <ListItem>
-              <ListItemText>Pincode      -</ListItemText>
+              <ListItemText>Pincode -</ListItemText>
             </ListItem>
             <ListItem>
               <ListItemText>State</ListItemText>
