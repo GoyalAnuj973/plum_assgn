@@ -1,0 +1,26 @@
+.confirmation {
+    display: flex;
+    flex-direction: column;
+    width: 930px;
+    height: 270px;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+.confirmation-and-button {
+  display: flex;
+  flex-direction: row;
+}
+.details {
+    justify-content: center;
+    margin-left: 80px;
+}
+.MuiButton-root.next-button {
+    width: 320px;
+    height: 47px;
+    margin-top: 200px;
+    margin-left: 1450px;
+    border-radius: 6px;
+    padding: 12px, 20px, 12px, 20px;
+    background-color: #e06358;
+    color: #ffffff;
+  }

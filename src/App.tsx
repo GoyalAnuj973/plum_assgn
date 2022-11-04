@@ -1,8 +1,9 @@
-import React from 'react';
-import './App.css';
-import Declaration from './Screens/DeclarationScreen';
-import Form from './Screens/FormScreen';
-import Package from './Screens/PackageScreen';
+import React from "react";
+import "./App.css";
+import Confirmation from "./Screens/ConfirmationScreen";
+import Declaration from "./Screens/DeclarationScreen";
+import Form from "./Screens/FormScreen";
+import Package from "./Screens/PackageScreen";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       {/* <Form /> */}
       {/* <Package /> */}
       {/* <Declaration /> */}
+      {/* <Confirmation /> */}
     </div>
   );
 }

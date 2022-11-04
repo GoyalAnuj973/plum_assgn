@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 import BackButton from "../../assets/BackButton.svg";
 import FormPreview from "../../Components/formpreview";
 import "./index.css";
+import CustomizedSteppers from "../../Components/Stepper";
 
 function Declaration() {
   const [checked, setChecked] = React.useState(true);
@@ -17,6 +18,7 @@ function Declaration() {
 
   return (
     <div className="declaration-screen">
+      <CustomizedSteppers activeStep={2} />
       <div className="declaration-content">
         <div className="checkboxes">
           <div className="declaration-and-button">

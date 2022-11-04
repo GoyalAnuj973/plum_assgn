@@ -14,6 +14,7 @@ import "./index.css";
 import { useFormControls } from "./formValidation";
 import Divider from "@mui/material/Divider";
 import FormPreview from "../../Components/formpreview";
+import CustomizedSteppers from "../../Components/Stepper";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -111,6 +112,7 @@ const Form = () => {
 
   return (
     <div className="outer-div-1">
+      <CustomizedSteppers activeStep={0} />
       <div className="outer-div-2">
         <div className="form-screen">
           <div className="information-on-page">

@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import BackButton from "../../assets/BackButton.svg";
 import "./index.css";
 import Husband from "../../assets/Husband-Filled.svg";
+import CustomizedSteppers from "../../Components/Stepper";
 
 const marks = [
   {
@@ -37,6 +38,7 @@ function valueLabelFormat(value: number) {
 function Package() {
   return (
     <div className="screen-2">
+      <CustomizedSteppers activeStep={1} />
       <div className="screen-2-content">
         <div className="package-and-info">
           <div className="info-about-page">
