@@ -8,6 +8,7 @@ import BackButton from "../../assets/BackButton.svg";
 import FormPreview from "../../Components/formpreview";
 import "./index.css";
 import CustomizedSteppers from "../../Components/Stepper";
+import { useNavigate } from "react-router-dom";
 
 function Declaration() {
   const [checked, setChecked] = React.useState(true);
@@ -16,13 +17,21 @@ function Declaration() {
     setChecked(event.target.checked);
   };
 
+  const navigate = useNavigate();
+  const handleNext = () => {
+    navigate("/confirmation");
+  };
+  const handleBack = () => {
+    navigate("/package-selection");
+  };
+
   return (
     <div className="declaration-screen">
       <CustomizedSteppers activeStep={2} />
       <div className="declaration-content">
         <div className="checkboxes">
           <div className="declaration-and-button">
-            <Button>
+            <Button onClick={handleBack}>
               <img src={BackButton} />
             </Button>
             <div className="information-on-page">
@@ -106,7 +115,7 @@ function Declaration() {
           <FormPreview />
         </div>
       </div>
-      <Button className="next-button" type="submit">
+      <Button className="next-button" type="submit" onClick={handleNext}>
         {/* disabled={!formIsValid()} */}
         Next
       </Button>

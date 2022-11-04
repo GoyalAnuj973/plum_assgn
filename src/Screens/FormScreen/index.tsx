@@ -15,6 +15,7 @@ import { useFormControls } from "./formValidation";
 import Divider from "@mui/material/Divider";
 import FormPreview from "../../Components/formpreview";
 import CustomizedSteppers from "../../Components/Stepper";
+import { useNavigate } from "react-router-dom";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -109,6 +110,11 @@ const Form = () => {
 
   const { handleInputValue, handleFormSubmit, formIsValid, errors } =
     useFormControls();
+
+  const navigate = useNavigate();
+  const handleNext = () => {
+    navigate("/package-selection");
+  };
 
   return (
     <div className="outer-div-1">
@@ -212,7 +218,7 @@ const Form = () => {
           <FormPreview />
         </div>
       </div>
-      <Button className="next-button" type="submit">
+      <Button className="next-button" type="submit" onClick={handleNext}>
         {/* disabled={!formIsValid()} */}
         Next
       </Button>
@@ -221,47 +227,3 @@ const Form = () => {
 };
 
 export default Form;
-
-{
-  /* <Grid item>
-                <Item>
-                  <TextField
-                    placeholder="email"
-                    label="Personal email address"
-                  />
-                </Item>
-              </Grid>
-
-              <Grid item>
-                <Item>
-                  <TextField placeholder="contact no." label="Mobile number" />
-                </Item>
-              </Grid>
-
-              <Grid item>
-                <Item>
-                  <TextField
-                    placeholder="flat no./block no."
-                    label="Address line 01"
-                  />
-                </Item>
-              </Grid>
-
-              <Grid item>
-                <Item>
-                  <TextField placeholder="street" label="Address line 02" />
-                </Item>
-              </Grid>
-
-              <Grid item>
-                <Item>
-                  <TextField placeholder="area pin" label="Pincode" />
-                </Item>
-              </Grid>
-
-              <Grid item>
-                <Item>
-                  <TextField placeholder="state" label="State" />
-                </Item>
-              </Grid> */
-}

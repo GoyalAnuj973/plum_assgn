@@ -7,6 +7,7 @@ import BackButton from "../../assets/BackButton.svg";
 import "./index.css";
 import Husband from "../../assets/Husband-Filled.svg";
 import CustomizedSteppers from "../../Components/Stepper";
+import { useNavigate } from "react-router-dom";
 
 const marks = [
   {
@@ -36,13 +37,21 @@ function valueLabelFormat(value: number) {
 }
 
 function Package() {
+  const navigate = useNavigate();
+  const handleNext = () => {
+    navigate("/declaration");
+  };
+  const handleBack = () => {
+    navigate("/");
+  };
+
   return (
     <div className="screen-2">
       <CustomizedSteppers activeStep={1} />
       <div className="screen-2-content">
         <div className="package-and-info">
           <div className="info-about-page">
-            <Button>
+            <Button onClick={handleBack}>
               <img src={BackButton} />
             </Button>
             <div className="information-on-page">
@@ -86,7 +95,7 @@ function Package() {
           <FormPreview />
         </div>
       </div>
-      <Button className="next-button" type="submit">
+      <Button className="next-button" type="submit" onClick={handleNext}>
         {/* disabled={!formIsValid()} */}
         Next
       </Button>
