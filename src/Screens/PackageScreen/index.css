@@ -1,0 +1,63 @@
+.screen-2-content {
+  display: flex;
+  flex-direction: row;
+}
+.info-about-page {
+  display: flex;
+  flex-direction: row;
+  width: 736px;
+  height: 150px;
+  margin-top: 100px;
+  margin-left: 150px;
+}
+.plan-person {
+  display: flex;
+  flex-direction: column;
+  width: 736px;
+  height: 99px;
+  margin-top: 30px;
+  margin-left: 150px;
+  background-color: #ffffff;
+  justify-content: space-around;
+  padding: 16px;
+}
+.person {
+  display: flex;
+  flex-direction: row;
+}
+.plans-selection {
+  width: 770px;
+  height: 150px;
+  margin-top: 5px;
+  margin-left: 150px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 24px, 16px, 24px, 16px;
+}
+.sums {
+  margin-left: 30px;
+}
+.slider {
+  margin-left: 30px;
+}
+.side-form-preview {
+  width: 352px;
+  height: 415px;
+  margin-top: 100px;
+  margin-left: 400px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  justify-content: baseline;
+}
+.MuiButton-root.next-button {
+  width: 320px;
+  height: 47px;
+  margin-top: 200px;
+  margin-left: 1450px;
+  border-radius: 6px;
+  padding: 12px, 20px, 12px, 20px;
+  background-color: #e06358;
+  color: #ffffff;
+}
