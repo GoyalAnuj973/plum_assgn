@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
+import Declaration from './Screens/DeclarationScreen';
 import Form from './Screens/FormScreen';
 import Package from './Screens/PackageScreen';
-// import FormPreview from './Components/formpreview';
 
 function App() {
   return (
     <div className="App">
       {/* <Form /> */}
-      <Package />
+      {/* <Package /> */}
+      {/* <Declaration /> */}
     </div>
   );
 }
